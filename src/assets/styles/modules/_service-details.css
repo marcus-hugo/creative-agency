@@ -1,0 +1,130 @@
+.service-details {
+    background: $clr-accent-red;
+
+    @mixin atMedium {
+        position: relative;
+        left: 333px;
+        bottom: 118px;
+    }
+
+    @mixin atLarge {
+        left: 515px;
+        bottom: 199px;
+        padding-bottom: 6.875rem;
+    }
+
+    &__title {
+        font-size: $_32px;
+        font-weight: 800;
+        line-height: $_40px;
+        margin: 0;
+        padding-top: $_96px;
+        color: $clr-light;
+
+        @mixin atMedium {
+            position: relative;
+            left: -336px;
+            top: 241px;
+            color: black;
+            max-width: 350px;
+            padding-top: 0;
+        }
+
+        @mixin atLarge {
+            padding: 0;
+            font-size: $_56px;
+            font-weight: 800;
+            line-height: $_64px;
+            max-width: 472px;
+            left: -381px;
+            top: 401px;
+        }
+    }
+
+    &__ol {
+        list-style: none;
+        padding-inline-start: $_20px;
+        margin: $_50px 0 0 0;
+
+        @mixin atMedium {
+            position: relative;
+            top: -3px;
+            padding: 0;
+            margin-top: 0;
+        }
+
+        @mixin atLarge {
+            margin: 0 240px;
+            padding-bottom: $_17px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: -262px;
+        }
+    }
+
+    &-li {
+        position: relative;
+        margin-bottom: -2.0625rem;
+
+        @mixin atMedium {
+            padding-left: 43px;
+        }
+
+        @mixin atLarge {
+            padding-bottom: .625rem;
+        }
+
+        &__number {
+            font-size: $_80px;
+            font-weight: 800;
+            line-height: $_88px;
+            color: $clr-accent-light;
+        }
+
+        &__subtitle {
+            font-size: $_15px;
+            font-weight: 800;
+            line-height: $_25px;
+            position: relative;
+            top: -59px;
+            color: $clr-light;
+
+            @mixin atMedium {
+                padding-left: 17px;
+            }
+
+            @mixin atLarge {
+                font-size: $_20px;
+            }
+        }
+
+        &__text {
+            font-size: $_15px;
+            font-weight: 400;
+            line-height: $_25px;
+            position: relative;
+            top: -59px;
+            color: $clr-light;
+
+            @mixin atMedium {
+                padding-left: 17px;
+                max-width: 409px;
+            }
+
+            @mixin atLarge {
+                font-size: $_18px;
+                line-height: $_32px;
+                padding-right: 0;
+                max-width: 411px;
+            }
+        }  
+    }
+
+    /* had to research this one! */
+    &-li:last-child {
+        .service-details-li__text {
+            padding-bottom: $_50px;
+        }
+    }
+}

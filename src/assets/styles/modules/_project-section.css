@@ -1,0 +1,37 @@
+.project-section {
+    overflow: hidden;
+}
+
+.carousel {
+    @mixin atMedium {
+        position: relative;
+    }
+
+    &__icon {
+        display: none;
+
+        @mixin atMedium {
+            display: block;
+            position: absolute;
+            top: 22px;
+            left: 360px;
+            z-index: 3;
+            max-width: 62px;
+            transform: rotateX(180deg);
+        }
+
+        @mixin atLarge {
+            transform: rotateX(0deg);
+            max-width: 134px;
+            left: 649px;
+            top: -5px;
+        }
+    }
+}
+
+.carousel-items {
+    
+    .slide-one {
+        
+    }
+}

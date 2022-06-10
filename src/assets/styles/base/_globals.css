@@ -1,0 +1,44 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Commissioner', sans-serif;
+    font-weight: $fw400;
+    color: $clr-dark;
+    overflow-x: hidden;
+}
+
+main {
+
+    @mixin atMedium {
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+h1, h2, h3, p {
+    padding: 0 $_24px;
+
+    @mixin atMedium {
+        padding: 0 $_40px;
+    }
+
+    @mixin atLarge {
+        padding: 0 156px;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: $clr-light;
+    text-decoration: none;
+}

@@ -1,0 +1,122 @@
+.service-section {
+    position: relative;
+    background: $clr-bg-dark;
+    color: $clr-light;
+
+    @mixin atMedium {
+        display: flex;
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__image > img {
+        width: 100%;
+
+        @mixin atMedium {
+            min-width: fit-content;
+        }
+    }
+
+    &__icon {
+        width: 63px;
+        position: relative;
+        top: -15px;
+        margin-left: $_24px;
+
+        @mixin atMedium {
+            left: -42px;
+            top: 146px;
+        }
+
+        @mixin atLarge {
+            left: -89px;
+            top: 228px;
+            width: 135px;
+        }
+    }
+
+    .content-wrapper {
+
+        @mixin atMedium {
+            position: relative;
+            top: 54px;
+            left: 30px;
+        }
+
+        @mixin atLarge {
+            position: initial;
+        }
+    }
+
+    &__title {
+        font-size: $_32px;
+        font-weight: 800;
+        line-height: $_40px;
+        margin: $_38px 0 $_25px 0;
+
+        span {
+            color: $clr-accent-red;
+        }
+
+        @mixin atMedium {
+            max-width: 212px;
+        }
+
+        @mixin atLarge {
+            font-size: $_56px;
+            font-weight: 800;
+            line-height: $_64px;
+            max-width: 231px;
+            padding: 0;
+            margin: 12.5rem 0 $_50px 0;
+        }
+    }
+
+    &__text {
+        font-size: $_15px;
+        line-height: $_25px;
+        margin: 0 0 $_40px 0;
+
+        @mixin atMedium {
+            max-width: 352px;
+        }
+
+        @mixin atLarge {
+            padding: 0 24px 0 0;
+            margin-bottom: $_50px;
+            max-width: 455px;
+            font-size: $_18px;
+            line-height: $_32px;
+        }
+    }
+
+    &__btn {
+        font-size: $_15px;
+        font-weight: 800;
+        line-height: $_18px;
+        margin: 0 0 0 24px;
+        padding: 0 0 $_80px 0;
+        
+        a {
+            color: $clr-accent-red;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: $_10px;
+        }
+
+        @mixin atMedium {
+            padding-left: 16px;
+        }
+
+        @mixin atLarge {
+            padding: 0;
+            margin: 0;
+            font-size: $_18px;
+            font-weight: 800;
+            line-height: $_22px;
+        }
+    }
+}

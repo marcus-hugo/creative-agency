@@ -1,0 +1,63 @@
+.footer {
+    padding: 0 0 100px 0;
+
+    @mixin atMedium {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px 100px 40px;
+    }
+
+    @mixin atLarge {
+        padding: 0 165px 152px 165px;
+        margin-top: -70px;
+        position: relative;
+    }
+
+    &__icon {
+        display: none;
+
+        @mixin atLarge {
+            display: block;
+            position: absolute;
+            left: -61px;
+        }
+    }
+
+    &__text-wrapper {
+
+        @mixin atMedium {
+            max-width: 44%;
+        }
+
+        @mixin atLarge {
+            max-width: 52%;
+        }
+    }
+
+    &__text {
+        font-size: $_32px;
+        font-weight: 800;
+        line-height: $_40px;
+
+        @mixin atMedium {
+            margin: 0;
+            padding: 0;
+        }
+
+        @mixin atLarge {
+            font-size: $_56px;
+            line-height: $_64px;
+        }
+    }
+   
+    &__btn {
+        background: $clr-accent-red;
+        display: inline-block;
+        margin-left: 24px;
+
+        @mixin atMedium {
+            padding: 21px 37px;
+        }
+    }
+}

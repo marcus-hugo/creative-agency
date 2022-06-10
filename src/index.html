@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Webpack Tutorial</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="wrapper flex">
+      <div class="site-header__logo">
+        <img src="assets/images/logo.svg" alt="logo">
+      </div>
+
+      <!-- hamburger menu icon -->
+      <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="primary-nav">
+        <ul>
+          <li class="primary-nav__link"><a href="#about-section">About</a></li>
+          <li class="primary-nav__link"><a href="#service-section">Service</a></li>
+          <li class="primary-nav__link"><a href="#projects-section">Projects</a></li>
+        </ul>
+
+        <div class="btn primary-nav__btn">
+          <a href="#">Schedule a Call</a>
+        </div>
+        
+      </nav>
+    </div>
+
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- About Section -->
+    <div id="about-section" class="about-section">
+
+      <!-- use picture element for croping or art direction -->
+      <picture class="about-section__hero-image">
+        <!-- when to switch to the large size image -->
+        <source srcset="assets/images/desktop/image-hero-desktop.jpg" media="(min-width:1080px)">
+        <!-- when to switch to medium size image -->
+        <source srcset="assets/images/tablet/image-hero-tablet.jpg" media="(min-width:760px)">
+        <!-- begin with the smallest image -->
+        <img src="assets/images/mobile/image-hero-mobile.jpg" alt="two programers at computers">
+      </picture>
+
+      <h1 class="about-section__title">Branding & website design agency</h1>
+      <p class="about-section__text">
+        We specialize in visual storytelling by creating cohesive brand and website design
+        solutions for small businesses, giving lasting impressions to audiences in a digital world.
+      </p>
+
+      <div class="btn about-section__btn">
+        <a href="#">Learn More</a>
+      </div>
+      
+    </div>
+
+    <!-- Service Section -->
+    <div id="service-section" class="service-section">
+     
+        <picture class="service-section__image">
+          <!-- when to switch to the large size image -->
+          <source srcset="assets/images/desktop/image-strategic-desktop.jpg" media="(min-width:1080px)">
+          <!-- when to switch to medium size image -->
+          <source srcset="assets/images/tablet/image-strategic-tablet.jpg" media="(min-width:760px)">
+          <!-- begin with the smallest image -->
+         <img src="assets/images/mobile/image-strategic-mobile.jpg" alt="overview of designer at desk">
+       </picture>
+ 
+       <div class="service-section__icon">
+         <img src="assets/images/bg-pattern-wave-red.svg" alt="">
+       </div>
+       
+       <div class="content-wrapper">
+         <h2 class="service-section__title"><span>Design</span> is strategic.</h2>
+         <p class="service-section__text">"A well-crafted design strategy consistently produces desired outcomes and brand awareness.
+           We are firm believers that success lies in creative collaboration with our clients."</p>
+         
+         <div class="service-section__btn">
+           <a  href="">Schedule a call</a>
+         </div>
+       </div>
+  
+    </div>
+
+    <!-- service details -->
+    <div class="service-details">
+
+      <h2 class="service-details__title">Our approach for creating a winning brand</h2>
+
+      <ol class="service-details__ol">
+
+        <li class="service-details-li">
+          <div class="service-details-li__number">01</div>
+          <h3 class="service-details-li__subtitle">Brand strategy</h3>
+          <p class="service-details-li__text">Brand strategy is critical for long-term success. Outshining competitors and capturing the target audience are key.</p>
+        </li>
+
+        <li class="service-details-li">
+          <div class="service-details-li__number">02</div>
+          <h3 class="service-details-li__subtitle">Brand design</h3>
+          <p class="service-details-li__text">Keeping the brand design unique and meaningful helps in communicating the brand’s timeless
+            value effectively.</p>
+        </li>
+
+        <li class="service-details-li">
+          <div class="service-details-li__number">03</div>
+          <h3 class="service-details-li__subtitle">Web design</h3>
+          <p class="service-details-li__text"> A beautifully crafted website is the best tool for brand awareness, and ultimately results
+            in increased revenues.</p>
+        </li>
+      </ol>
+
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects-section">
+      <section class="carousel" aria-label="carousel" aria-roledescription="carousel">
+        <div class="carousel-items" aria-live="polite">
+
+          <!-- SLIDE ONE -->
+          <div class="slide slide--one" role="group" aria-label="1 of 3" aria-roledescription="slide">
+            <!-- image -->
+            <div class="slide__img-wrapper">
+              <picture>
+                <source media="(min-width: 1080px)" srcset="assets/images/desktop/image-slide-1-desktop.jpg 895w">
+                <source media="(min-width: 760px)" srcset="assets/images/tablet/image-slide-1-tablet.jpg 378w">
+                <img class="slide__img" srcset="assets/images/mobile/image-slide-1-mobile.jpg 375w" alt="person holding product catalog">
+              </picture>
+            </div>
+            <!-- title -->
+            <div class="slide__title-wrapper">
+              <h2 class="slide__title">Brand naming & guidelines</h2>
+            </div>
+            <!-- text -->
+            <div class="slide__text">
+              <p>Lean Product Roadmap</p>
+              <p>2019 project</p>
+            </div>
+          </div>
+
+          <!-- SLIDE TWO -->
+          <div class="slide slide--two" role="group" aria-label="2 of 3" aria-roledescription="slide">
+            <img class="slide__img" src="assets/images/mobile/image-slide-2-mobile.jpg" alt="">
+            <h2 class="slide__title">Brand identity & merchandise</h2>
+            <div class="slide__text">
+              <p>New Majestic Hotel</p>
+              <p>2018 Project</p>
+            </div>
+          </div>
+
+          <!-- SLIDE THREE -->
+          <div class="slide slide--three" role="group" aria-label="3 of 3" aria-roledescription="slide">
+            <img class="slide__img" src="assets/images/mobile/image-slide-3-mobile.jpg" alt="">
+            <h2 class="slide__title">Brand identity & web design</h2>
+            <div class="slide__text">
+              <p>Crypto Dashboard</p>
+              <p>2016 Project</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Icon -->
+        <div class="carousel__icon">
+          <img src="assets/images/bg-pattern-wavy-white.svg" alt="">
+        </div>
+
+        <!-- Carousel Controls -->
+        <div class="slide-controls">
+
+          <button class="slide-control-btn slide-control-btn--previous" aria-controls="carousel-items" aria-label="Previous Slide">
+            <div class="slide-control-btn__img-wrapper">
+              <img src="assets/images/icon-arrow-previous.svg" alt="">
+            </div>
+          </button>
+
+          <button class="slide-control-btn slide-control-btn--next" aria-controls="carousel-items" aria-label="Next Slide">
+            <div class="slide-control-btn__img-wrapper">
+              <img src="assets/images/icon-arrow-next.svg" alt="">
+            </div>
+          </button>
+
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__icon">
+      <img src="assets/images/bg-pattern-wave-red.svg" alt="">
+    </div>
+    
+    <div class="footer__text-wrapper">
+      <p class="footer__text">Let's build something great together.</p>
+    </div>
+    
+    <div class="btn footer__btn">
+      <a href="#">Schedule a Call</a>
+    </div>
+
+  </footer>
+  
+  <script src="bundled.js"></script>
+</body>
+
+</html>

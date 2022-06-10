@@ -1,0 +1,16 @@
+@import 'normalize.css';
+@import 'base/_variables';
+@import 'base/_mixins';
+@import 'base/_globals';
+/* these have to go after to compile*/
+@import 'modules/_header';
+@import 'modules/_primary-nav';
+@import 'modules/_btn';
+@import 'modules/_flex';
+@import 'modules/_about-section';
+@import 'modules/_service-section';
+@import 'modules/_service-details';
+@import 'modules/_project-section';
+@import 'modules/_slide';
+@import 'modules/_slide-controls';
+@import 'modules/_footer';

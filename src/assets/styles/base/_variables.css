@@ -1,0 +1,63 @@
+/* Colors */
+$clr-dark: #000;
+$clr-light: #fff;
+
+$clr-grey: rgba(0, 0, 0, .5);
+$clr-bg-dark: #191921;
+$clr-accent-red: #f94f4f;
+$clr-accent-light: rgba(255, 255, 255, 0.25);
+
+/* Font-weights */
+$fw400: 400;
+$fw800: 800;
+
+/* Pixel size to rem */
+$_10px: .625rem;
+$_12px: .75rem;
+$_15px: 0.9375rem;
+$_16px: 1rem;
+$_17px: 1.0625rem;
+$_18px: 1.125rem;
+$_19px: 1.1875rem;
+$_20px: 1.25rem;
+
+$_21px: 1.3125rem;
+$_22px: 1.375rem;
+$_24px: 1.5rem;
+$_25px: 1.5625rem;
+$_26px: 1.625rem;
+$_27px: 1.6875rem;
+
+$_32px: 2rem;
+$_37px: 2.3125rem;
+$_38px: 2.375rem;
+
+
+$_40px: 2.5rem;
+$_47px: 2.9375rem;
+$_48px: 3rem;
+$_50px: 3.125rem;
+$_56px: 3.5rem;
+$_57px: 3.5625rem;
+$_58px: 3.625rem;
+
+$_64px: 4rem;
+$_65px: 4.0625rem;
+$_67px: 4.1875rem;
+$_69px: 4.3125rem;
+
+$_80px: 5rem;
+$_88px: 5.5rem;
+
+$_96px: 6rem;
+$_15px6: 9.75rem;
+$_25px6: 16rem;
+$_34px5: 21.5625rem;
+$_39px6: 24.75rem;
+$_55px8: 34.875rem;
+
+/* Test */
+$_16px: 1rem;
+.box {
+    padding: $_16px 0;
+}

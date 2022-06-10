@@ -1,0 +1,116 @@
+.slide {
+    display: flex;
+    flex-direction: column;
+    background: $clr-bg-dark;
+    color: $clr-light;
+    position: relative;
+
+    @mixin atMedium {
+        flex-direction: row-reverse;
+        justify-content: center;
+        background: #fff;
+        bottom: 100px;
+    }
+
+    @mixin atLarge {
+        bottom: 200px;
+        max-height: 895px;
+    }
+
+    &__img-wrapper {
+
+        @mixin atMedium {
+            display: flex;
+            flex-grow: 1;
+        }
+    }
+
+    &__img {
+        @mixin atLarge {
+        }
+    }
+
+    &__title-wrapper {
+
+        @mixin atMedium {
+            max-height: 352px;
+            min-width: 390px;
+            background: $clr-bg-dark;
+            position: relative;
+            z-index: 1;
+            margin-right: -57px;
+        }
+
+        @mixin atLarge {
+            max-height: 528px;
+            min-width: 735px;
+            margin-right: -219px;
+        }
+    }
+
+    &__title {
+        font-size: $_32px;
+        font-weight: 800;
+        line-height: $_40px;
+        margin: $_64px 0 10px 0;
+
+        @mixin atMedium {
+            margin: 100px 0 0 0;
+        }
+
+        @mixin atLarge {
+            font-size: $_56px;
+            line-height: $_64px;
+            position: relative;
+            top: 55px;
+        }
+    }
+
+    &__text {
+        font-size: $_15px;
+        font-weight: 800;
+        line-height: .25rem;
+        position: relative;
+        left: -6px;
+        bottom: 302px;
+        text-align: right;
+        margin-top: $_65px;
+
+        p:last-child {
+            font-weight: 400;
+        }
+
+        @mixin atMedium {
+            top: 80%;
+            left: 68%;
+            margin: 0;
+            position: absolute;
+        }
+
+        @mixin atLarge {
+
+            font-size: $_20px;
+            font-weight: 800;
+            line-height: $_16px;
+            left: 75%;
+            top: 76%;
+
+            p {
+                padding: 0;
+            }
+
+            p:last-child {
+                font-size: $_18px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    &--two {
+        display: none;
+    }
+
+    &--three {
+        display: none;
+    }
+}

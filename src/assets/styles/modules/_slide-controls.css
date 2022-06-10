@@ -1,0 +1,31 @@
+.slide-controls {
+    display: flex;
+    gap: $_16px;
+    position: relative;
+    left: 24px;
+    bottom: 100px;
+
+    @mixin atMedium {
+        position: absolute;
+        top: 113px;
+        left: 37px;
+        width: fit-content;
+        height: fit-content;
+        z-index: 2;
+    }
+
+    @mixin atLarge {
+        top: 134px;
+        left: 155px;
+    }
+}
+
+.slide-control-btn {
+        padding: 0;
+        border: none;
+        background: $clr-bg-dark;
+
+    &__img-wrapper {
+        display: flex;
+    }
+}

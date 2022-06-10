@@ -1,0 +1,79 @@
+.primary-nav {
+    visibility: hidden;
+    position: absolute;
+    right: 10%;
+    top: 123px;
+    text-align: center;
+    background: $clr-bg-dark;
+   
+    ul {
+        list-style: none;
+        margin: 2rem 0 0 0;
+        padding-inline-start: 0;
+
+        @mixin atMedium {
+            display: flex;
+            background: $clr-accent-red;
+            margin: 0;
+        }
+    }
+
+    li {
+        margin: 0 0 1.5rem 0;
+
+        @mixin atMedium {
+            margin: 0 20px 0 0;
+        }
+
+        @mixin atLarge {
+            margin: 0 32px 0 0;
+        }
+    }
+
+    &--is-open {
+        visibility: visible;
+    }
+
+    &__btn {
+        background: $clr-accent-red;
+
+        a {
+            font-size: $_18px;
+        }
+
+        @mixin atMedium {
+            background: $clr-bg-dark;
+            width: 147px;
+            height: 64px;
+            font-size: $_16px;
+            display: grid;
+            align-content: center;
+            
+            a {
+                font-size: $_16px;
+            }
+        }
+    }
+
+    @mixin atMedium {
+        position: static;
+        visibility: visible;
+        display: flex;
+        padding: $_57px 40px;
+        background: $clr-accent-red;
+        align-items: center;
+
+        .btn {
+            padding: 0;
+        }
+    }
+
+    @mixin atLarge {
+        padding: $_57px 165px $_57px 70px;
+
+        .btn {
+            width: 200px;
+            height: 65px;
+        }
+    }
+}
