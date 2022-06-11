@@ -21,45 +21,63 @@
         padding: 5px;
     }
 
+    &__nav-toggle-btn {
+        padding: .75em .5em;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+
+        &:focus {
+            outline: dashed 2px red;
+            outline-offset: 5px;
+        }
+
+        
+    }
+
+    .hamburger {
+        display: block;
+        position: relative;
+    }
+    
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        background: $clr-grey;
+        width: 24px;
+        height: 2px;
+        border-radius: 1em;
+        transition: transform 250ms ease-out;
+    }
+    
+    
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    
+    .hamburger::before { top: 6px; }
+    .hamburger::after { bottom: 6px; }
+
+    .nav-open .hamburger {
+        transform: rotate(45deg);
+    }
+    
+    .nav-open .hamburger::before {
+        transform: rotate(90deg) translateX(-6px);
+    }
+    
+    .nav-open .hamburger::after {
+        opacity: 0;
+    }
+
     &__menu-icon {
         width: 24px;
         height: 18px;
         position: relative;
-        
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 24px;
-            height: 2px;
-            background: $clr-grey;
-            transform-origin: 0 0;
-            transition: transform .3s ease-out;
-        }
-
-        &__middle {
-            position: absolute;
-            top: 8px;
-            left: 0;
-            width: 24px;
-            height: 2px;
-            background: $clr-grey;
-            transition: all .3s ease-out;
-            transform-origin: 0 50%;
-        }
-
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 24px;
-            height: 2px;
-            background: $clr-grey;
-            transform-origin: 0 100%;
-            transition: transform .3s ease-out;
-        }
 
         @mixin atMedium {
             display: none;
