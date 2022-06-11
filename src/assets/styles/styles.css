@@ -2,7 +2,7 @@
 @import 'base/_variables';
 @import 'base/_mixins';
 @import 'base/_globals';
-/* these have to go after to compile*/
+/* these have to go after to compile */
 @import 'modules/_header';
 @import 'modules/_primary-nav';
 @import 'modules/_btn';

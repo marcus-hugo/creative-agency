@@ -18,15 +18,11 @@
     }
 
     &__img-wrapper {
+        position: relative;
 
         @mixin atMedium {
             display: flex;
             flex-grow: 1;
-        }
-    }
-
-    &__img {
-        @mixin atLarge {
         }
     }
 
@@ -102,6 +98,7 @@
             p:last-child {
                 font-size: $_18px;
                 font-weight: 400;
+               
             }
         }
     }
