@@ -13,7 +13,7 @@ class MobileMenu {
     }
 
     closeMenu() {
-        this.menuIcon.classList.remove('site-header__menu-icon--close')
+        this.menuIcon.classList.remove('nav-open')
         this.primaryNav.classList.remove('primary-nav--is-open')
     }
 

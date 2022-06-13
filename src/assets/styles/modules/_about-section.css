@@ -68,6 +68,10 @@
         line-height: $_22px;
         margin: $_40px 0 $_96px $_24px;
 
+        &:hover {
+            background: #FF9393;
+        }
+
         @mixin atMedium {
             position: absolute;
             left: 0;

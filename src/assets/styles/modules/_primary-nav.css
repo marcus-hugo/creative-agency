@@ -21,6 +21,10 @@
     li {
         margin: 0 0 1.5rem 0;
 
+        &:hover {
+            transform: scale(1.10);
+        }
+        
         @mixin atMedium {
             margin: 0 20px 0 0;
         }
@@ -37,6 +41,10 @@
     &__btn {
         background: $clr-accent-red;
 
+        &:hover {
+            background: #FF9393;
+        }
+
         a {
             font-size: $_18px;
         }
@@ -51,6 +59,10 @@
             
             a {
                 font-size: $_16px;
+            }
+
+            &:hover {
+                background: #434356;
             }
         }
     }

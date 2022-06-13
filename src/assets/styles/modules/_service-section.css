@@ -107,6 +107,10 @@
             text-underline-offset: $_10px;
         }
 
+        a:hover {
+            color: #FF9393;
+        }
+
         @mixin atMedium {
             padding-left: 16px;
         }

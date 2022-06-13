@@ -32,7 +32,9 @@
             outline-offset: 5px;
         }
 
-        
+        @mixin atMedium {
+            display: none;
+        }
     }
 
     .hamburger {
@@ -72,16 +74,6 @@
     
     .nav-open .hamburger::after {
         opacity: 0;
-    }
-
-    &__menu-icon {
-        width: 24px;
-        height: 18px;
-        position: relative;
-
-        @mixin atMedium {
-            display: none;
-        }
     }
 
     &__menu-icon--close {

@@ -56,6 +56,10 @@
         display: inline-block;
         margin-left: 24px;
 
+        &:hover {
+            background: #FF9393;
+        }
+        
         @mixin atMedium {
             padding: 21px 37px;
         }
