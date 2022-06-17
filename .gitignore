@@ -28,7 +28,7 @@
 *.sass-cache
 *.config.js
 node_modules/
-docs/
+# docs/
 .tmp/
 
 # OS or Editor folders
