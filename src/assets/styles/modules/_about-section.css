@@ -56,7 +56,7 @@
         @mixin atLarge {
             font-size: $_18px;
             line-height: $_32px;
-            top: 396px;
+            top: 449px;
             width: 822px;
         }
     }
