@@ -25,10 +25,6 @@
         border: none;
         background: $clr-bg-dark;
 
-    &__img-wrapper {
-        display: flex;
-    }
-
     &:hover {
         cursor: pointer;
         transform: scale(1.15);
